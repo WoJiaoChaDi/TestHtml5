@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+    <meta name="description" content="免费 Web & 编程 教程">
+    <meta name="author" content="Runoob">
+    <meta http-equiv="refresh" content="300"><!--每300秒刷新一次-->
+
+    <title>Title</title>
+    <!--<base href="http://www.runoob.com/" target="_blank">-->
+</head>
+<body>
+
+    <a id="tips" href="http://www.baidu.com" target="_blank">跳转百度</a><br/>
+    <a href="#tips">将页面定位到指定id的位置</a><br/>
+    <a href="http://www.runoob.com/html/html-links.html#tips">
+        访问有用的提示部分</a><br/>
+    <a href="html/html-head.html">在base href的基础上，添加href</a><br/>
+
+    <p style="font-family: Consolas;
+                color: red; font-size: 25px;
+                text-align: center; background-color: darkturquoise;">
+        一个段落。</p>
+
+    <a href="https://qnam.smzdm.com/201801/01/5a4a31d22475d1109.jpg_e600.jpg">
+        <img src="rou.jpg" alt="肉的图片" title="鼠标放在肉图片上了"
+             width="200" height="160">
+    </a>
+    <br/>
+
+    <h4>单元格跨两格:</h4>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Telephone</th>
+        </tr>
+        <tr>
+            <td>Bill Gates</td>
+            <td>555 77 854</td>
+            <td>555 77 855</td>
+        </tr>
+    </table>
+
+    <h4>单元格跨两列:</h4>
+    <table border="1">
+        <tr>
+            <th>First Name:</th>
+            <td>Bill Gates</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telephone:</th>
+            <td>555 77 854</td>
+        </tr>
+        <tr>
+            <td>555 77 855</td>
+        </tr>
+    </table>
+
+    <h5>无序序列</h5>
+    <ul>
+        <li>Coffee</li>
+        <li>Milk</li>
+    </ul>
+
+    <h5>有序序列</h5>
+    <ol type="1"><!--1,A,a,I,i-->
+        <li>Coffee</li>
+        <li>Milk</li>
+    </ol>
+
+    <!--区块元素 div、h1、p、ul、ol、table-->
+    <!--内联元素 span、b、td、a、img-->
+    <div id="container" style="width: 500px">
+        <div id="header" style="background-color:#FFA500;">
+            <h1 style="margin-bottom:0;">主要的网页标题</h1>
+        </div>
+
+        <div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">
+            <b>菜单</b><br>
+            HTML<br>
+            CSS<br>
+            JavaScript
+        </div>
+
+        <div id="content" style="background-color:#EEEEEE;height:200px;width:400px;float:left;">
+            内容在这里
+        </div>
+
+        <!--clear:both对多个div浮动的清除-->
+        <div id="footer" style="background-color:#FFA500;clear:both;text-align:center;float:left;">
+            版权 © runoob.com
+        </div>
+
+        <div style="clear:both;">
+            <iframe name="iframe_a" src="http://www.runoob.com/" width="200" height="200" frameborder="0"></iframe>
+        </div>
+
+        <p><a href="http://www.sina.com" target="iframe_a" accesskey="c">Sina.COM</a></p>
+
+        <br/>
+        <br/>
+        <a href="#html_z" accesskey="x">键盘设定跳转到某个地方</a>
+        <p id="html_z">HTML字符实体 &nbsp</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #myP
+        {
+            background-color: burlywood;
+            color: dodgerblue;
+            font-size: 10pt;
+        }
+
+        h6.centerP
+        {
+            height: 40px;
+            /*background-color: #00ced1;*/
+            background-image: url("rou.jpg");
+            text-align: right;
+        }
+
+        .centerP
+        {
+            background-color: rgb(255,0,0);
+        }
+
+        #myA
+        {
+            text-decoration: none; /*去掉a标签的下划线*/
+        }
+
+        #sp_1 {text-decoration:overline;} /*上划线*/
+        #sp_2 {text-decoration:line-through;} /*删除线*/
+        #sp_3 {text-decoration:underline;} /*下划线*/
+        #sp_4 {white-space: nowrap;} /*不换行*/
+        #sp_5 {font-size: 18px; font-weight: bold;} /*字体大小*/
+
+        a:link {color:#000000;}      /* 未访问链接*/
+        a:visited {color:#00FF00;}  /* 已访问链接 */
+        a:hover {color:#FF00FF;}  /* 鼠标移动到链接上 */
+        a:active {color:#0000FF;}  /* 鼠标点击时 */
+
+        .a_2_class:link,.a_2_class:visited
+        {
+            display:block;
+            font-weight:bold;
+            color:#FFFFFF;
+            background-color:#98bf21;
+            width:240px;
+            text-align:center;
+            padding:4px;
+            text-decoration:none;
+        }
+        .a_2_class:hover,.a_2_class:active
+        {
+            background-color:#7A991A;
+        }
+
+        #div_1 {
+            background-color: lightgrey;
+            width: 300px;
+            border: 25px solid green;
+            padding: 25px;
+            margin: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <span id="myP">这是一个被样式控制的段落！</span>
+        <span class="centerP">这是一个被样式控制的段落！</span>
+        <h6 class="centerP">这是一个被样式控制的h6！</h6>
+        <br/>
+        <a id="myA" href="#" target="_blank">没营养</a>
+        <span id="sp_1">这是sp！</span>
+        <span id="sp_2">这是sp！</span>
+        <span id="sp_3">这是sp！</span>
+        <span id="sp_4">我想要不换行！我想要不换行！我想要不换行！我想要不换行！我想要不换行！我想要不换行！我想要不换行！我想要不换行！我想要不换行！我想要不换行！</span>
+        <span id="sp_5">标准大小是16px，也就是1em！</span>
+        <br/>
+        <a id="a_1">这是一个链接！</a>
+        <a id="a_2" class="a_2_class" href="#">这是一个自由定制的链接！</a>
+
+        <div id="div_1">这里是盒子内的实际内容。有 25px 内间距，25px 外间距、25px 绿色边框。</div>
+
+        <p>请把鼠标移动到单词上，可以看到鼠标指针发生变化：</p>
+        <span style="cursor:auto">auto</span><br>
+        <span style="cursor:crosshair">crosshair</span><br>
+        <span style="cursor:default">default</span><br>
+        <span style="cursor:e-resize">e-resize</span><br>
+        <span style="cursor:help">help</span><br>
+        <span style="cursor:move">move</span><br>
+        <span style="cursor:n-resize">n-resize</span><br>
+        <span style="cursor:ne-resize">ne-resize</span><br>
+        <span style="cursor:nw-resize">nw-resize</span><br>
+        <span style="cursor:pointer">pointer</span><br>
+        <span style="cursor:progress">progress</span><br>
+        <span style="cursor:s-resize">s-resize</span><br>
+        <span style="cursor:se-resize">se-resize</span><br>
+        <span style="cursor:sw-resize">sw-resize</span><br>
+        <span style="cursor:text">text</span><br>
+        <span style="cursor:w-resize">w-resize</span><br>
+        <span style="cursor:wait">wait</span><br>
+    </div>
+
+</body>
+</html>
